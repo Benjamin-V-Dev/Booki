@@ -3,6 +3,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* *{
+    outline : 1px solid red!important;
+} */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
