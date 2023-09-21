@@ -390,6 +390,62 @@ h1 {
 
 
 
+
+/*****************************/
+/****** Activities ***********/
+/*****************************/
+
+.activities h2 {
+    margin: 5% 0 2.5% 0;
+}
+
+.activities-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5%;
+    margin-bottom: 20%;
+}
+
+.activities-articles a {
+    width: 22.5%;
+    background-color: white;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.activities-article{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.activities-article img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.activities-article h3 {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /********************************/
 /****** Media queries ***********/
