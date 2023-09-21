@@ -284,6 +284,47 @@ h1 {
     width: 65%;
 }
 
+.hebergements h2{
+    margin-bottom: 33px;
+}
+
+
+
+.hebergements-cards{
+    display: flex;
+    gap: 2.5%;
+    width: 100%;
+}
+
+.hebergements-cards a{
+    width: 30%;
+}
+.hebergements-cards .card{
+    width: 100%;
+}
+.hebergements-cards .card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+.hebergements-cards .card .card-content{
+    margin: 5px;
+}
+
+.hebergements-cards .card .card-txt h3{
+    margin-bottom: 10px;
+}
+
+.hebergements-cards .card .card-txt p{
+    margin-bottom: 5px;
+}
+
+
+
+
 
 /*****************************/
 /****** Populaires ***********/
