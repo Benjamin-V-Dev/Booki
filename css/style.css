@@ -1,4 +1,8 @@
+/*************************/
 /****** General ***********/
+/*************************/
+
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -70,7 +74,71 @@ a {
     color: var(--main-bg-color)
 }
 
+ul {
+    list-style: none;
+}
+
+
+
+
+/*************************/
+/****** Header ***********/
+/*************************/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+.header-container-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.header-container-logo img{
+    width: 61.09px;
+    height: auto;
+}
+
+nav {
+    width: 75%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    margin-left:75px;
+    padding-top: 15px;
+    border-top: 2px solid transparent; /* Ajout d'une bordure transparente pour annuler le décalage*/
+}
+nav ul li:hover{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    box-sizing: content-box;
+}
+
+
+
+
+
+
+
+
+
+/**********************************************/
 /****** Hebergements And Populaires ***********/
+/**********************************************/
+
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -83,12 +151,22 @@ a {
     box-sizing: border-box;
 }
 
+
+/*******************************/
 /****** Hebergements ***********/
+/*******************************/
+
+
 .hebergements {
     width: 65%;
 }
 
+
+/*****************************/
 /****** Populaires ***********/
+/*****************************/
+
+
 .populaires {
     width: 32%;
 }
@@ -137,8 +215,12 @@ a {
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-
+/********************************/
 /****** Media queries ***********/
+/********************************/
+
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -172,6 +254,9 @@ a {
         font-size: 13px;
     }
 }
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
