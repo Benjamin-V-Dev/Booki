@@ -133,16 +133,17 @@ nav ul li:hover{
 /**********************************/
 
 h1 {
+    font-size: 22px;
     margin: 1% 0;
 }
 
-.search-area {
+.search-area-desktop {
     margin: 2.5% 0;
     display: flex;
     height: 5%;
 }
 
-.search-area-left{
+.search-area-desktop-left{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,15 +156,14 @@ h1 {
 }
 
 
-.search-area-center{
+.search-area-desktop-center{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17.5%;
-
+    width: 20%;
     background-color: var(--grey-color);
 }
-.search-area-center input{
+.search-area-desktop-center input{
     height: 92%;
     width: 100%;
     border: none;
@@ -172,13 +172,13 @@ h1 {
     font-weight: 700;
     text-align: center;
 }
-.search-area-center input:active,
-.search-area-center input:focus{
+.search-area-desktop-center input:active,
+.search-area-desktop-center input:focus{
     outline: none;
 }
 
 
-.search-area-right{
+.search-area-desktop-right{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +211,9 @@ h1 {
     margin-right : 30px;
 }
 
+.filter-btns{
+    display: flex;
+}
 
 .filter-btn{
     display: flex;
@@ -341,6 +344,9 @@ h1 {
 /*****************************/
 /****** Populaires ***********/
 /*****************************/
+
+
+
 
 
 .populaires {
@@ -482,14 +488,46 @@ footer{
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/********************************/
-/****** Media queries ***********/
-/********************************/
+/***********************************************************************************************************************************************************/
+/******************************************************************* Media queries Tablette ****************************************************************/
+/***********************************************************************************************************************************************************/
 
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /**********************************/
+    /****** Search & Filter ***********/
+    /**********************************/
+
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter h2{
+        margin-bottom:3%;
+    }
+
+    .filter-btns{
+        margin-bottom: 2%;
+    }
+    .filter-btns :nth-child(1){
+        margin-left: 0;
+    }
+
+    .additional-information{
+        margin-bottom: 5%;
+    }
+
+    /**********************************************/
+    /****** hebergements-and-populaires ***********/
+    /**********************************************/
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -520,10 +558,22 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /*****************************/
+    /****** Activities ***********/
+    /*****************************/
+
+    .activities-article img{
+        height: 220px;
+    }
+
+
 }
 
 
-
+/***********************************************************************************************************************************************************/
+/******************************************************************* Media queries Mobile ******************************************************************/
+/***********************************************************************************************************************************************************/
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
