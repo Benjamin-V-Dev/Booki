@@ -141,7 +141,7 @@ h1 {
     margin: 2.5% 0;
     display: flex;
     height: 50px;
-    width: 35%;
+    width: 40%;
 }
 
 .search-area-desktop-left {
@@ -189,7 +189,7 @@ h1 {
 }
 
 .search-area-desktop form button {
-    width: 35%;
+    width: 40%;
     background-color: var(--blue-color);
     border-radius: 0 15px 15px 0;
     color: white;
