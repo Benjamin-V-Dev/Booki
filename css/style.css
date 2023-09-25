@@ -128,23 +128,19 @@ nav ul li:hover {
 /****** Search & Filter ***********/
 /**********************************/
 
-.search-area-mobile {
-    display: none;
-}
-
 h1 {
     font-size: 22px;
     margin: 1% 0;
 }
 
-.search-area-desktop {
+.search-area {
     margin: 2.5% 0;
     display: flex;
     height: 50px;
     width: 40%;
 }
 
-.search-area-desktop-left {
+.search-area-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +152,7 @@ h1 {
     width: 11%;
 }
 
-.search-area-desktop form {
+.search-area form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -167,8 +163,8 @@ h1 {
     font-weight: 700;
 }
 
-.search-area-desktop form input,
-.search-area-desktop form button {
+.search-area form input,
+.search-area form button {
     border: none;
     display: block;
     height: 100%;
@@ -178,21 +174,30 @@ h1 {
     text-align: center;
 }
 
-.search-area-desktop form input {
+.search-area form input {
     width: 65%;
     border: 1px solid var(--grey-color);
 }
 
-.search-area-desktop form input:active,
-.search-area-desktop form input:focus {
+.search-area form input:active,
+.search-area form input:focus {
     outline: none;
 }
 
-.search-area-desktop form button {
+.search-area form button {
     width: 40%;
     background-color: var(--blue-color);
     border-radius: 0 15px 15px 0;
     color: white;
+    cursor: pointer;
+}
+
+.search-area form button span::before {
+    content: "Rechercher";
+}
+
+.search-area form button i {
+    display: none;
 }
 
 .filter {
@@ -609,50 +614,23 @@ footer {
         margin: 3% 0;
     }
 
-    .search-area-desktop {
-        display: none;
-    }
-
-    .search-area-mobile {
-        display: flex;
-        width: 100%;
-        margin: 5% 0;
-    }
-
-    .search-area-mobile {
+    .search-area {
         margin: 10% 0;
         display: flex;
         height: 50px;
         width: 100%;
     }
 
-    .search-area-mobile-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        background-color: var(--grey-color);
-        border: 1px solid var(--grey-color);
-        border-radius: 15px 0 0 15px;
-        height: 100%;
-        width: 11%;
-    }
-
-    .search-area-mobile form {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 89%;
-        height: 100%;
-
+    .search-area form {
         font-size: 18px;
         font-weight: 700;
         border: 1px solid var(--grey-color);
         position: relative;
     }
 
-    .search-area-mobile form input,
-    .search-area-mobile form button {
+    .search-area form input,
+    .search-area form button {
         border: none;
         display: block;
         height: 100%;
@@ -662,16 +640,12 @@ footer {
         text-align: center;
     }
 
-    .search-area-mobile form input {
+    .search-area form input {
         width: 90%;
     }
 
-    .search-area-mobile form input:active,
-    .search-area-mobile form input:focus {
-        outline: none;
-    }
 
-    .search-area-mobile form button {
+    .search-area form button {
         width: 52px;
         height: 52px;
         background-color: var(--blue-color);
@@ -684,7 +658,12 @@ footer {
         box-shadow: 0px 4px 4px 0px #00000040;
     }
 
-    .search-area-mobile form button i {
+    .search-area form button span::before {
+        content: none;
+    }
+
+    .search-area form button i {
+        display: block;
         color: white;
     }
 
